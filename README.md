@@ -27,7 +27,7 @@ This repository documents my journey through learning React, starting with the b
 
 The following enhancements are planned for the Tic-Tac-Toe game:
 
-- [ ] Show "You are at move #…" for the current move instead of a button
+- [X] Show "You are at move #…" for the current move instead of a button
 - [ ] Rewrite Board to use two loops to make the squares instead of hardcoding them
 - [ ] Add a toggle button to sort moves in ascending or descending order
 - [ ] Highlight the three winning squares and display a draw message when applicable

@@ -24,7 +24,7 @@ export default function Game() {
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className='game-info'>
-        <Moves history={history} jumpTo={jumpTo} />
+        <Moves history={history} jumpTo={jumpTo} currentMove={currentMove} />
       </div>
     </div>
   );
