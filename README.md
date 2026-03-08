@@ -4,7 +4,7 @@ A project to learn and practice React fundamentals with hands-on exercises.
 
 ## Overview
 
-This repository documents my journey through learning React, starting with the basics and progressing to more advanced concepts. The focus is on understanding core React principles through practical implementation.
+This repository captures the fundamentals of React through a hands-on learning journey, where each core concept is reinforced by practical implementation.
 
 ## What's Included
 
