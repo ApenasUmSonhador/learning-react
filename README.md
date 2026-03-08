@@ -33,21 +33,6 @@ The following enhancements are planned for the Tic-Tac-Toe game:
 - [ ] Highlight the three winning squares and display a draw message when applicable
 - [ ] Display move location in the format (row, col) in the move history list
 
-## Next Steps
-
-The following topics will be developed next:
-
-- [ ] Lifting State Up (Advanced)
-- [ ] Conditional Rendering
-- [ ] Lists and Keys
-- [ ] Form Handling
-- [ ] useEffect Hook
-- [ ] Context API
-- [ ] Custom Hooks
-- [ ] Performance Optimization
-- [ ] Routing with React Router
-- [ ] State Management Patterns
-
 ## Getting Started
 
 ### Prerequisites
