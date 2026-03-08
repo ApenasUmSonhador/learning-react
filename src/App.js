@@ -11,12 +11,12 @@ export default function board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState(true);
   function onSquareClick(i) {
-    if (squares[i]) {
+    if (squares[i] || calculateWinner(squares)) {
       return;
     }
     const squaresCopy = squares;
     squaresCopy[i] = xIsNext ? 'X' : 'O';
-    setSquares(squaresCopy);
+    setSquares(squaresCopy);  
     setXIsNext(!xIsNext);
     calculateWinner(squares);
   }
@@ -35,14 +35,20 @@ export default function board() {
     for (let i = 0; i < victoryLines.length; i++) {
       const [a, b, c] = victoryLines[i];
       if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-        alert(`Player ${squares[a]} wins!`);
         return squares[a];
       }
     }
     return null;
   }
 
+  let status;
+  if (calculateWinner(squares)) {
+    status = 'Winner: ' + calculateWinner(squares);
+  } else {
+    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+  }
   return <>
+  <div className="status">{status}</div>
   <div className="board-row">
     <Square value={squares[0]} onSquareClick={() => onSquareClick(0)}/>
     <Square value={squares[1]} onSquareClick={() => onSquareClick(1)}/>
